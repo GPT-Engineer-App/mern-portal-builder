@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Home, Services, User, Lock } from "lucide-react";
+import { Home, Briefcase, User, Lock } from "lucide-react"; // Corrected import
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/sidebar"; // Use the sidebar layout
 import Index from "./pages/Index.jsx";
@@ -20,7 +20,7 @@ export const navItems = [
   {
     title: "Services",
     to: "/services",
-    icon: <Services className="h-4 w-4" />,
+    icon: <Briefcase className="h-4 w-4" />, // Corrected icon
   },
   {
     title: "Profile",
